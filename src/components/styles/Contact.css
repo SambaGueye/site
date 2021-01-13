@@ -1,0 +1,27 @@
+form {
+    background-color: antiquewhite;
+    border-radius: 30px;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.main {
+    align-items: center;
+}
+form label {
+    font-weight: bold;
+    text-align: center;
+}
+
+form input {
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid red;
+    background-color: transparent;
+}
+

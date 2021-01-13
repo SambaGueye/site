@@ -1,0 +1,104 @@
+.main-nav {
+    display: flex; 
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.title h2 {
+    transition: 2s all ease;
+    font-family: 'Merienda', cursive;
+    /*animation: App-logo 3s infinite ;*/
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.burger{
+    display: none;
+}
+
+.nav-links li {
+    padding-left: 3em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-links li:hover {
+    color: rgb(224, 171, 171);
+}
+
+@media screen and (max-width:600px){
+    .main-nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .nav-links li{
+        animation: list-in 2s ease forwards;;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        display: inline;
+        padding-left: 8em;
+        color: rgb(241, 241, 241);
+    }
+
+    .nav-links-active {
+        height: 34em;
+    }
+
+    .nav-links-active li {
+        padding-top: 2em;
+        list-style: none;
+        color: rgb(243, 237, 237);
+        margin: 2em;
+        font-size: 22px;
+        animation: list-in 2s ease forwards;
+    }
+
+   
+    
+    @keyframes list-in {
+        from{
+            opacity: 0;
+            margin-top: 50%;
+            color: rgb(184, 32, 58);
+        }
+        to{
+            opacity: 1;
+            margin-top: 0%;
+            color: rgb(243, 237, 237);
+        }
+    }
+
+    
+}
+
+@keyframes App-logo{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

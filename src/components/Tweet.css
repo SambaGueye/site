@@ -1,0 +1,69 @@
+.main {
+    align-items: center;
+}
+.main-tweet {
+    align-items: center;
+    text-align: center;
+    width: 320px;   
+}
+
+
+
+.main-tweet h2 {
+
+}
+
+.visible, .invisible {
+    opacity: 0.0;
+    transition: opacity 0.5s ease;
+  }
+  .visible {
+    opacity: 1.0;
+  }
+
+.main-tweet img {
+    border-radius: 250px;
+    width: 250px;
+    border: 2px solid red;
+    height: 250px;
+    transition: 1s all ease;
+}
+
+
+
+@media screen and (max-width:600px){
+    .main {
+        align-items: center;
+        padding-bottom: 2em;
+    }
+    .main-tweet {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 0 15px -5px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .main-tweet img {
+        border-radius: 250px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buttons button {
+        background-color:rgb(248, 247, 246);  
+        border-radius: 5px;
+        height: 3em;
+        width: 7em;
+        margin-left: 0.5em;
+    }    
+}
